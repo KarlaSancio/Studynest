@@ -129,7 +129,8 @@ class DisciplineDetailFragment : Fragment() {
 
         // Botão Adicionar Material
         binding.btnAddMaterial.setOnClickListener {
-            Toast.makeText(context, "Ir para tela de Upload", Toast.LENGTH_SHORT).show()
+            val action = DisciplineDetailFragmentDirections.actionDisciplineDetailFragmentToAddMaterialFragment(disciplina.id)
+            findNavController().navigate(action)
         }
 
         // Botão Chat

@@ -96,6 +96,22 @@
         <argument
             android:name="disciplinaSelecionada"
             app:argType="com.example.studynest.domain.Disciplina" />
+        
+        <action
+            android:id="@+id/action_disciplineDetailFragment_to_addMaterialFragment"
+            app:destination="@id/addMaterialFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addMaterialFragment"
+        android:name="com.example.studynest.ui.AddMaterialFragment"
+        android:label="Adicionar Material"
+        tools:layout="@layout/fragment_add_material">
+
+        <argument
+            android:name="idDisciplina"
+            app:argType="string" />
+            
     </fragment>
 
 </navigation>

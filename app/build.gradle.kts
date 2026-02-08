@@ -63,5 +63,6 @@ dependencies {
     implementation(libs.firebase.auth)
     implementation(libs.firebase.firestore)
 
-
+    implementation("io.github.jan-tennert.supabase:storage-kt:2.3.0")
+    implementation("io.ktor:ktor-client-android:2.3.10")
 }
