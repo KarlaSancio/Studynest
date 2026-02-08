@@ -52,7 +52,8 @@
                 android:layout_height="wrap_content"
                 android:text="Home"
                 android:textSize="10sp"
-                android:textColor="@color/studynest_purple"/>
+                android:textColor="@color/studynest_purple"
+                android:fontFamily="@font/alexandria"/>
         </LinearLayout>
 
         <LinearLayout
@@ -70,12 +71,14 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_add_box"
-                app:tint="@color/black"/> <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Adicionar"
-            android:textSize="10sp"
-            android:textColor="@color/black"/>
+                app:tint="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adicionar"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/alexandria"/>
         </LinearLayout>
 
         <LinearLayout
@@ -99,7 +102,8 @@
                 android:layout_height="wrap_content"
                 android:text="Pesquisar"
                 android:textSize="10sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:fontFamily="@font/alexandria"/>
         </LinearLayout>
 
         <LinearLayout
@@ -123,7 +127,8 @@
                 android:layout_height="wrap_content"
                 android:text="Favoritos"
                 android:textSize="10sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:fontFamily="@font/alexandria"/>
         </LinearLayout>
 
     </LinearLayout>

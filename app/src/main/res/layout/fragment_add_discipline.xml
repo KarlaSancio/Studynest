@@ -22,7 +22,8 @@
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/alexandria"/>
 
         <TextView
             android:id="@+id/lbl_nome"
@@ -33,7 +34,8 @@
             android:textStyle="bold"
             android:layout_marginTop="32dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_title"/>
+            app:layout_constraintTop_toBottomOf="@id/txt_title"
+            android:fontFamily="@font/alexandria"/>
 
         <EditText
             android:id="@+id/edt_nome"
@@ -43,7 +45,8 @@
             android:background="@drawable/bg_input_rounded"
             android:paddingHorizontal="12dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/lbl_nome"/>
+            app:layout_constraintTop_toBottomOf="@id/lbl_nome"
+            android:fontFamily="@font/alexandria"/>
 
         <TextView
             android:id="@+id/lbl_codigo"
@@ -54,7 +57,8 @@
             android:textStyle="bold"
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edt_nome"/>
+            app:layout_constraintTop_toBottomOf="@id/edt_nome"
+            android:fontFamily="@font/alexandria"/>
 
         <EditText
             android:id="@+id/edt_codigo"
@@ -64,7 +68,8 @@
             android:background="@drawable/bg_input_rounded"
             android:paddingHorizontal="12dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/lbl_codigo"/>
+            app:layout_constraintTop_toBottomOf="@id/lbl_codigo"
+            android:fontFamily="@font/alexandria"/>
 
         <TextView
             android:id="@+id/lbl_area"
@@ -75,7 +80,8 @@
             android:textStyle="bold"
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edt_codigo"/>
+            app:layout_constraintTop_toBottomOf="@id/edt_codigo"
+            android:fontFamily="@font/alexandria"/>
 
         <EditText
             android:id="@+id/edt_area"
@@ -85,7 +91,8 @@
             android:background="@drawable/bg_input_rounded"
             android:paddingHorizontal="12dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/lbl_area"/>
+            app:layout_constraintTop_toBottomOf="@id/lbl_area"
+            android:fontFamily="@font/alexandria"/>
 
         <TextView
             android:id="@+id/lbl_descricao"
@@ -96,7 +103,8 @@
             android:textStyle="bold"
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edt_area"/>
+            app:layout_constraintTop_toBottomOf="@id/edt_area"
+            android:fontFamily="@font/alexandria"/>
 
         <EditText
             android:id="@+id/edt_descricao"
@@ -107,7 +115,8 @@
             android:hint="Descreva a disciplina..."
             android:background="@drawable/bg_input_rounded"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/lbl_descricao"/>
+            app:layout_constraintTop_toBottomOf="@id/lbl_descricao"
+            android:fontFamily="@font/alexandria"/>
 
         <Button
             android:id="@+id/btn_enviar"
@@ -118,7 +127,8 @@
             android:textColor="@color/white"
             android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edt_descricao"/>
+            app:layout_constraintTop_toBottomOf="@id/edt_descricao"
+            android:fontFamily="@font/alexandria"/>
 
         <ProgressBar
             android:id="@+id/progress_bar"
