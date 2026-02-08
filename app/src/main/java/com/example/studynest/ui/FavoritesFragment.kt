@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.studynest.databinding.FragmentFavoritesBinding // <--- O layout correto
+import com.example.studynest.databinding.FragmentFavoritesBinding 
 import com.example.studynest.persistence.firebase.FirebaseUsuarioDAOImpl
 import com.example.studynest.ui.adapter.DisciplineAdapter
 import com.example.studynest.viewmodel.FavoritesViewModel
@@ -29,7 +29,6 @@ class FavoritesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // AQUI ESTÁ O SEGREDO: Ele infla o fragment_favorites, não a home
         binding = FragmentFavoritesBinding.inflate(inflater, container, false)
         return binding.root
     }
