@@ -4,77 +4,107 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Criar Conta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        android:textSize="20dp"
+        android:textColor="@color/studynest_purple"
+        android:fontFamily="@font/alexandria_bold"
+        android:id="@+id/txtCriar" />
+
     <EditText
         android:id="@+id/edtName"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nome"
-        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Nome de Usuário"
+        app:layout_constraintTop_toBottomOf="@id/txtCriar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/alexandria"/>
 
     <EditText
         android:id="@+id/edtEmail"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
         android:inputType="textEmailAddress"
         app:layout_constraintTop_toBottomOf="@id/edtName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alexandria"/>
 
     <EditText
         android:id="@+id/edtPhone"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Telefone"
         android:inputType="phone"
         app:layout_constraintTop_toBottomOf="@id/edtEmail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alexandria"/>
 
     <EditText
         android:id="@+id/edtGender"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Sexo"
         app:layout_constraintTop_toBottomOf="@id/edtPhone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alexandria"/>
 
     <EditText
         android:id="@+id/edtPassword1"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Senha"
         android:inputType="textPassword"
         app:layout_constraintTop_toBottomOf="@id/edtGender"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alexandria"/>
 
     <EditText
         android:id="@+id/edtPassword2"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Confirmar senha"
+        android:hint="Confirme sua senha"
         android:inputType="textPassword"
         app:layout_constraintTop_toBottomOf="@id/edtPassword1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alexandria"/>
 
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/studynest_purple"
         android:text="Cadastrar"
         app:layout_constraintTop_toBottomOf="@id/edtPassword2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/alexandria"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
