@@ -124,7 +124,8 @@ class DisciplineDetailFragment : Fragment() {
 
         // Botão Materiais
         binding.btnMateriais.setOnClickListener {
-            Toast.makeText(context, "Abrir Lista de Materiais", Toast.LENGTH_SHORT).show()
+            val action = DisciplineDetailFragmentDirections.actionDisciplineDetailFragmentToMaterialListFragment(disciplina.id)
+            findNavController().navigate(action)
         }
 
         // Botão Adicionar Material

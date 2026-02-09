@@ -100,6 +100,10 @@
         <action
             android:id="@+id/action_disciplineDetailFragment_to_addMaterialFragment"
             app:destination="@id/addMaterialFragment" />
+
+        <action
+            android:id="@+id/action_disciplineDetailFragment_to_materialListFragment"
+            app:destination="@id/materialListFragment" />
     </fragment>
 
     <fragment
@@ -111,7 +115,16 @@
         <argument
             android:name="idDisciplina"
             app:argType="string" />
-            
+    </fragment>
+
+    <fragment
+        android:id="@+id/materialListFragment"
+        android:name="com.example.studynest.ui.MaterialListFragment"
+        android:label="Lista de Materiais"
+        tools:layout="@layout/fragment_material_list">
+        <argument
+            android:name="idDisciplina"
+            app:argType="string" />
     </fragment>
 
 </navigation>
