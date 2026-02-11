@@ -1,5 +1,6 @@
 package com.example.studynest.ui
 
+import com.example.studynest.R
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -7,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.studynest.databinding.FragmentHomeBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -28,6 +30,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         loadUserName()
+        setupLogout()
     }
 
     private fun loadUserName() {
@@ -60,4 +63,16 @@ class HomeFragment : Fragment() {
             binding.txtWelcomeTitle.text = "Bem-Vindo!"
         }
     }
+
+    private fun setupLogout() {
+        binding.btnLogout.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+
+            Toast.makeText(context, "Logout realizado com sucesso", Toast.LENGTH_SHORT).show()
+
+            findNavController().navigate(R.id.action_home_to_login)
+        }
+    }
+
+
 }

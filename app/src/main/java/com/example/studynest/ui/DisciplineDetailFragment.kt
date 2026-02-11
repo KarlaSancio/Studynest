@@ -136,7 +136,34 @@ class DisciplineDetailFragment : Fragment() {
 
         // Botão Chat
         binding.btnChat.setOnClickListener {
-            Toast.makeText(context, "Abrir Chat", Toast.LENGTH_SHORT).show()
+            val uid = auth.currentUser?.uid ?: return@setOnClickListener
+            val disciplinaId = disciplina.id
+
+            // Desabilita botão pra evitar spam
+            binding.btnChat.isEnabled = false
+
+            CoroutineScope(Dispatchers.IO).launch {
+                val result = usuarioDAO.isFavorito(uid, disciplinaId)
+
+                withContext(Dispatchers.Main) {
+                    binding.btnChat.isEnabled = true
+
+                    if (result.isSuccess && result.getOrThrow()) {
+                        // Usuário pode acessar o chat
+                        val action = DisciplineDetailFragmentDirections
+                            .actionDisciplineDetailFragmentToChatFragment(disciplinaId)
+
+                        findNavController().navigate(action)
+
+                    } else {
+                        Toast.makeText(
+                            context,
+                            "Você precisa favoritar a disciplina para acessar o chat",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
+                }
+            }
         }
     }
 }
