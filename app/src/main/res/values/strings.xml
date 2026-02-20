@@ -1,5 +1,75 @@
 <resources>
     <string name="app_name">Studynest</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Senha</string>
+
+    <string name="login_welcome">Bem-Vindo!</string>
+    <string name="login_subtitle">Logue para continuar!</string>
+    <string name="btn_login">Entrar</string>
+    <string name="txt_no_account_register">Não tem uma conta? Cadastre-se</string>
+
+    <string name="register_title">Criar Conta</string>
+    <string name="hint_username">Nome de Usuário</string>
+    <string name="hint_phone">Telefone</string>
+    <string name="hint_gender">Sexo</string>
+    <string name="hint_confirm_password">Confirme sua senha</string>
+    <string name="btn_register">Cadastrar</string>
+
+    <string name="home_welcome">Bem-Vindo, Fulano!</string>
+    <string name="home_tips_label">Dicas</string>
+    <string name="home_card_material_title">Material</string>
+    <string name="home_card_material_desc">Para acessar ou criar um material é preciso estar inscrito na disciplina.</string>
+    <string name="home_card_disciplines_title">Disciplinas</string>
+    <string name="home_card_disciplines_desc">Disciplinas podem conter o mesmo nome, mas têm códigos diferentes.</string>
+    <string name="btn_logout">Sair</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_add">Adicionar</string>
+    <string name="nav_search">Pesquisar</string>
+    <string name="nav_favorites">Favoritos</string>
+
+    <string name="content_desc_back">Voltar</string>
+
+    <string name="btn_send">Enviar</string>
+
+    <string name="add_discipline_title">Adicionar Disciplina</string>
+    <string name="add_discipline_lbl_name">Nome</string>
+    <string name="add_discipline_hint_name">Ex: Redes de Computadores</string>
+    <string name="add_discipline_lbl_code">Código da Disciplina</string>
+    <string name="add_discipline_hint_code">Ex: E0054</string>
+    <string name="add_discipline_lbl_area">Área de Conhecimento</string>
+    <string name="add_discipline_hint_area">Ex: Ciências Exatas</string>
+    <string name="add_discipline_lbl_desc">Descrição</string>
+    <string name="add_discipline_hint_desc">Descreva a disciplina...</string>
+
+    <string name="detail_btn_favorite">Favoritar</string>
+    <string name="detail_lbl_dashboard">Dashboard</string>
+    <string name="detail_btn_materials">📂  Materiais</string>
+    <string name="detail_btn_add_materials">➕  Adicionar Materiais</string>
+    <string name="detail_btn_chat">💬  Chat da Disciplina</string>
+
+    <string name="content_desc_search_icon">Ícone de pesquisa</string>
+
+    <string name="hint_search">Pesquisar</string>
+
+    <string name="add_material_title">Adicionar Material</string>
+    <string name="add_material_hint_name">Preencha o nome do Documento</string>
+    <string name="add_material_no_file_selected">Nenhum arquivo selecionado</string>
+    <string name="add_material_btn_select">Selecionar Arquivo</string>
+
+    <string name="material_list_title">Materiais da Disciplina</string>
+
+    <string name="favorites_title">Disciplinas Favoritas</string>
+    <string name="favorites_hint_search">Pesquisar nos favoritos</string>
+    <string name="favorites_empty">Nenhuma disciplina favorita ainda.</string>
+
+    <string name="search_title">Disciplinas</string>
+
+    <string name="content_desc_logo">Logo Studynest</string>
+
+    <string name="chat_title">Chat da Disciplina</string>
+    <string name="chat_hint_message">Digite sua mensagem...</string>
+
+    <string name="content_desc_download">Baixar material</string>
 </resources>

@@ -12,7 +12,7 @@
         android:id="@+id/txt_welcome_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bem-Vindo, Fulano!"
+        android:text="@string/home_welcome"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -26,7 +26,7 @@
         android:id="@+id/txt_dicas_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dicas"
+        android:text="@string/home_tips_label"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@color/studynest_purple"
@@ -62,7 +62,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Material"
+                android:text="@string/home_card_material_title"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="@color/black"
@@ -71,7 +71,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Para acessar ou criar um material é preciso estar inscrito na disciplina."
+                android:text="@string/home_card_material_desc"
                 android:layout_marginTop="8dp"
                 android:textSize="14sp"
                 android:textColor="#757575"
@@ -99,7 +99,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Disciplinas"
+                android:text="@string/home_card_disciplines_title"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="@color/black"
@@ -108,7 +108,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Disciplinas podem conter o mesmo nome, mas têm códigos diferentes."
+                android:text="@string/home_card_disciplines_desc"
                 android:layout_marginTop="8dp"
                 android:textSize="14sp"
                 android:textColor="#757575"
@@ -120,16 +120,14 @@
         android:id="@+id/btn_logout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Sair"
+        android:text="@string/btn_logout"
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/studynest_purple"
         android:textColor="@color/white"
         app:cornerRadius="12dp"
         android:fontFamily="@font/alexandria"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card_disciplinas"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

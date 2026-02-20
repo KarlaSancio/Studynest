@@ -50,7 +50,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Home"
+                android:text="@string/nav_home"
                 android:textSize="10sp"
                 android:textColor="@color/studynest_purple"
                 android:fontFamily="@font/alexandria"/>
@@ -75,7 +75,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Adicionar"
+                android:text="@string/nav_add"
                 android:textSize="10sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/alexandria"/>
@@ -100,7 +100,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pesquisar"
+                android:text="@string/nav_search"
                 android:textSize="10sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/alexandria"/>
@@ -125,7 +125,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Favoritos"
+                android:text="@string/nav_favorites"
                 android:textSize="10sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/alexandria"/>

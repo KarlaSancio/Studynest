@@ -12,7 +12,7 @@
         android:id="@+id/txt_title_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Disciplinas"
+        android:text="@string/search_title"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -39,8 +39,8 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_search"
-            app:tint="#757575"
-            android:contentDescription="Ícone de pesquisa" />
+            android:contentDescription="@string/content_desc_search_icon"
+            app:tint="#757575" />
 
         <EditText
             android:id="@+id/edt_search"
@@ -48,7 +48,7 @@
             android:layout_height="match_parent"
             android:layout_marginStart="8dp"
             android:background="@null"
-            android:hint="Pesquisar"
+            android:hint="@string/hint_search"
             android:textColor="@color/black"
             android:textColorHint="#9E9E9E"
             android:inputType="text"

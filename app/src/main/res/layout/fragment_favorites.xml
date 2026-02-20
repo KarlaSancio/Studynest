@@ -11,7 +11,7 @@
         android:id="@+id/txt_title_fav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Disciplinas Favoritas"
+        android:text="@string/favorites_title"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -35,6 +35,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_search"
+            android:contentDescription="@string/content_desc_search_icon"
             app:tint="#757575" />
 
         <EditText
@@ -43,7 +44,7 @@
             android:layout_height="match_parent"
             android:layout_marginStart="8dp"
             android:background="@null"
-            android:hint="Pesquisar nos favoritos"
+            android:hint="@string/favorites_hint_search"
             android:inputType="text"
             android:maxLines="1"
             android:fontFamily="@font/alexandria"/>
@@ -73,7 +74,7 @@
         android:id="@+id/txt_empty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nenhuma disciplina favorita ainda."
+        android:text="@string/favorites_empty"
         android:visibility="gone"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
